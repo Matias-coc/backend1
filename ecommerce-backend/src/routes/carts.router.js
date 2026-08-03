@@ -1,5 +1,13 @@
-const express = require ('express');
-const app = express();
+const {Router} = require ('express');
+const router = Router();
 
-app.post('/api/carts', (req, res) => {}); 
-app.get('/api/carts/:cid', (req, res) => {}); 
+router.post('/', (req, res) => {
+    res.send('Crear carrito');
+});
+
+router.get('/:cid', (req, res) => {
+    res.send(`Obtener carrito ID: ${req.params.cid}`);
+});
+
+module.exports = router;
+
