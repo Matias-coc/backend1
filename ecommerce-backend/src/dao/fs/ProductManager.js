@@ -1,8 +1,7 @@
-const { error } = require('console');
 const fs = require ('fs');
 const path = require ('path');
 
-class productsManager {
+class ProductsManager {
     constructor() {
         this.path = path.join(__dirname, '../../data/products.json');
     }
@@ -79,4 +78,4 @@ class productsManager {
     }
 }
 
-module.exports = productsManager;
+module.exports = ProductsManager;
