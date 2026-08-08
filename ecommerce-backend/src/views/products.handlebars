@@ -1,7 +1,7 @@
 <h2>Listado de Productos</h2>
 
-{{#if productos.length}}
-    <div class="productos">
+<div id="lista-productos">
+    {{#if productos.length}}
         {{#each productos}}
             <div class="producto">
                 <h3>{{this.title}}</h3>
@@ -11,7 +11,10 @@
                 <a href="/products/{{this.id}}">Ver detalle</a>
             </div>
         {{/each}}
-    </div>
-{{else}}
-    <p>No hay productos disponibles.</p>
-{{/if}}
+    {{else}}
+        <p>No hay productos disponibles.</p>
+    {{/if}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/productos.js"></script>

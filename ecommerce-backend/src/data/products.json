@@ -9,5 +9,27 @@
     "stock": 10,
     "category": "Ropa",
     "thumbnails": []
+  },
+  {
+    "id": 2,
+    "title": "Zapatillas",
+    "description": "Zapatillas deportivas",
+    "code": "ZAP001",
+    "price": 15000,
+    "status": true,
+    "stock": 5,
+    "category": "Calzado",
+    "thumbnails": []
+  },
+  {
+    "id": 3,
+    "title": "Zapatillas Nike",
+    "description": "Zapatillas deportivas",
+    "code": "ZAP002",
+    "price": 19000,
+    "status": true,
+    "stock": 3,
+    "category": "Calzado",
+    "thumbnails": []
   }
 ]
