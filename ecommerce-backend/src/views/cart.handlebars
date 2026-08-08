@@ -1,0 +1,16 @@
+<a href="/products">← Volver al listado</a>
+
+<h2>Carrito #{{carrito.id}}</h2>
+
+{{#if carrito.products.length}}
+    <div class="carrito">
+        {{#each carrito.products}}
+            <div class="carrito-item">
+                <p>Producto ID: {{this.product}}</p>
+                <p>Cantidad: {{this.quantity}}</p>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p>El carrito está vacío.</p>
+{{/if}}

@@ -1,0 +1,11 @@
+<a href="/products">← Volver al listado</a>
+
+<div class="producto-detalle">
+    <h2>{{producto.title}}</h2>
+    <p>Descripción: {{producto.description}}</p>
+    <p>Precio: ${{producto.price}}</p>
+    <p>Categoría: {{producto.category}}</p>
+    <p>Stock: {{producto.stock}}</p>
+    <p>Código: {{producto.code}}</p>
+    <p>Estado: {{#if producto.status}}Disponible{{else}}No disponible{{/if}}</p>
+</div>
